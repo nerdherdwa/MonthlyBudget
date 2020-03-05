@@ -1,1 +1,2 @@
-# Budgetry
+# Monthly Budget
+Javascript budget application
