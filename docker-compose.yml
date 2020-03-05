@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+  web_server:
+    container_name: webdev-budget
+    restart: always
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    ports:
+      - 8081:80
+    volumes:
+      - web_data_budget:/usr/local/apache2/htdocs/
+volumes:
+  web_data_budget:
+    external:
+      name: web_data_budget
